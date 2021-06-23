@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">fit360</string>
+    <string name="open"></string>
+    <string name="close"></string>
+    <string name="Goals">Goals</string>
+    <string name="Report">Report</string>
+    <string name="Reminder">Reminder</string>
+    <string name="Exercise">Exercises</string>
+    <string name="Trending">Trending</string>
+    <string name="Details">Details</string>
+</resources>

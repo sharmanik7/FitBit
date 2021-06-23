@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroundimg"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#7A474747"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="728dp">
+
+                <TextView
+                    android:id="@+id/sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:text="Sign Up"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFEFD5"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.051"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.051">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sin"
+                    app:layout_constraintVertical_bias="0.077">
+                    <eightbitlab.com.blurview.BlurView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/UserName"
+                            android:layout_marginEnd="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_person_black_24dp"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#EEE8AA"
+                            android:fontFamily="@font/lancelot"
+                            android:hint="User Name"
+                            android:inputType="textPersonName"
+                            android:padding="15dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textColorHint="#EEE8AA"
+                            android:textSize="15dp"></EditText>
+                    </eightbitlab.com.blurview.BlurView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.043">
+                    <eightbitlab.com.blurview.BlurView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/email"
+                            android:layout_marginEnd="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_mail_outline_black_24dp"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#EEE8AA"
+                            android:fontFamily="@font/lancelot"
+                            android:hint="Email ID"
+                            android:inputType="textEmailAddress"
+                            android:padding="15dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textColorHint="#EEE8AA"
+                            android:textSize="15dp"></EditText>
+                    </eightbitlab.com.blurview.BlurView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                    app:layout_constraintVertical_bias="0.043">
+                    <eightbitlab.com.blurview.BlurView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/passWord"
+                            android:layout_marginEnd="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#EEE8AA"
+                            android:fontFamily="@font/lancelot"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="15dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textColorHint="#EEE8AA"
+                            android:textSize="15dp"></EditText>
+                    </eightbitlab.com.blurview.BlurView>
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                    app:layout_constraintVertical_bias="0.043">
+                    <eightbitlab.com.blurview.BlurView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/dateOfBirth"
+                            android:layout_marginEnd="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_date_range_black_24dp"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#EEE8AA"
+                            android:fontFamily="@font/lancelot"
+                            android:hint="Enter Your Date Of Birth"
+                            android:inputType="date"
+                            android:padding="15dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textColorHint="#EEE8AA"
+                            android:textSize="15dp"></EditText>
+                    </eightbitlab.com.blurview.BlurView>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/button_background"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Sign Up"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/Con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/"
+                    android:text="------ Or Connect With -------"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFEFD5"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/SignUpButton"
+                    app:layout_constraintVertical_bias="0.138">
+
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/gButton"
+                    android:layout_width="67dp"
+                    android:layout_height="54dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/roundedbutton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/googleicon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Con"
+                    app:layout_constraintVertical_bias="0.179">
+
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/FbButton"
+                    android:layout_width="67dp"
+                    android:layout_height="54dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/roundedbutton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fbb"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.206"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Con"
+                    app:layout_constraintVertical_bias="0.179">
+
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/twitter"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="67dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/roundedbutton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/twitter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.799"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Con"
+                    app:layout_constraintVertical_bias="0.179">
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/roboto_slab_thin"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Already a User? Click here"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFEFD5"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gButton"
+                    app:layout_constraintVertical_bias="0.138">
+
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

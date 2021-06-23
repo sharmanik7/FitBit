@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "952699670655",
+    "firebase_url": "https://fitbit-c7bc0-default-rtdb.firebaseio.com",
+    "project_id": "fitbit-c7bc0",
+    "storage_bucket": "fitbit-c7bc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952699670655:android:9649856d1725213793af4a",
+        "android_client_info": {
+          "package_name": "com.example.fitbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952699670655-ah6kvknrvv7f73mlvosojlkjdmicbi2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7-BP7SkN9sH_-8rMbiW7B_KwF75dChOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952699670655-ah6kvknrvv7f73mlvosojlkjdmicbi2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

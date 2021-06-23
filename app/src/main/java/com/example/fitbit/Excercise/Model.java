@@ -1,0 +1,24 @@
+package com.example.fitbit.Excercise;
+
+public class Model {
+    String title;
+    String desc;
+    int icon;
+    public Model(String title, String desc, int icon){
+        this.desc=desc;
+        this.title=title;
+        this.icon=icon;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+    public String getDesc() {
+        return this.desc;
+    }
+
+    public int getIcon() {
+        return this.icon;
+    }
+}
